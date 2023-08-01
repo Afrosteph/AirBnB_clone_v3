@@ -128,3 +128,40 @@ TestBaseModel class:
 * `def test_pep8_conformance_test_user(self)` - Test that tests/test_models/test_user.py conforms to PEP8
 * `def test_user_module_docstring(self)` - Test for the user.py module docstring
 * `def test_user_class_docstring(self)` - Test for the User class docstring
+
+
+## Examples of use
+```
+vagrantAirBnB_clone$./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  create  destroy  help  quit  show  update
+
+(hbnb) all MyModel
+** class doesn't exist **
+(hbnb) create BaseModel
+af14c85b-172f-4474-8a30-d4ec21f9795e
+(hbnb) all BaseModel
+[[BaseModel] (af14c85b-172f-4474-8a30-d4ec21f9795e) {'updated_at': datetime.datetime(2017, 4, 13, 17, 10, 22, 378824), 'id': 'af14c85b-172f-4474-8a30-d4ec21f9795e', 'created_at': datetime.datetime(2017, 4, 13, 17, 10, 22, 378763)}]
+(hbnb) show BaseModel af14c85b-172f-4474-8a30-d4ec21f9795e
+[BaseModel] (af14c85b-172f-4474-8a30-d4ec21f9795e) {'updated_at': datetime.datetime(2017, 4, 13, 17, 10, 22, 378824), 'id': 'af14c85b-172f-4474-8a30-d4ec21f9795e', 'created_at': datetime.datetime(2017, 4, 13, 17, 10, 22, 378763)}
+(hbnb) destroy BaseModel af14c85b-172f-4474-8a30-d4ec21f9795e
+(hbnb) show BaseModel af14c85b-172f-4474-8a30-d4ec21f9795e
+** no instance found **
+(hbnb) quit
+```
+
+## Bugs
+No known bugs at this time. 
+
+## Authors
+moli okugn - [Github](https://github.com/Afrosteph) 
+=======
+
+>>>>>>> aac5acdaf910012588914eb3717c1dfbc215cbd8
+Second part of Airbnb: Abubakar Idi
+
+## License
+Public Domain. No copy write protection. 
